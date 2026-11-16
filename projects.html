@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Our Projects | SK Smart AI Technologies</title>
-    <meta name="description" content="Explore restaurant and cafe website projects designed by SK Smart AI Technologies.">
+    <meta name="description" content="Explore the Spice Garden Restaurant Website project designed by SK Smart AI Technologies.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +76,7 @@
             margin: auto;
         }
 
-        /* Navigation */
+        /* NAVIGATION */
 
         .topbar {
             position: sticky;
@@ -123,7 +123,7 @@
             color: var(--gold);
         }
 
-        /* Buttons */
+        /* BUTTONS */
 
         .btn {
             display: inline-flex;
@@ -154,7 +154,7 @@
             background: #16aa58;
         }
 
-        /* Project listing */
+        /* PROJECT LISTING */
 
         .landing {
             padding: 70px 0 110px;
@@ -166,9 +166,12 @@
             margin-bottom: 36px;
         }
 
+        /* ONE CENTERED PROJECT */
+
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: minmax(0, 720px);
+            justify-content: center;
             gap: 28px;
             align-items: start;
         }
@@ -189,7 +192,7 @@
 
         .project-cover {
             position: relative;
-            height: 260px;
+            height: 350px;
             border-radius: 14px;
             overflow: hidden;
             background: #1e1e1e;
@@ -221,7 +224,7 @@
 
         .project-body h2 {
             font-family: "Cormorant Garamond", Georgia, serif;
-            font-size: 29px;
+            font-size: 32px;
             color: white;
             line-height: 1.2;
             margin-bottom: 12px;
@@ -282,13 +285,13 @@
             font-size: 23px;
         }
 
-        /* Views */
+        /* VIEWS */
 
         .view[hidden] {
             display: none;
         }
 
-        /* Project detail */
+        /* PROJECT DETAIL */
 
         .detail-hero {
             position: relative;
@@ -506,7 +509,7 @@
             font-size: 14px;
         }
 
-        /* Galleries */
+        /* GALLERY */
 
         .gallery {
             display: grid;
@@ -547,7 +550,7 @@
             font-size: 14px;
         }
 
-        /* Recipes */
+        /* RECIPES */
 
         .recipe-grid {
             display: grid;
@@ -613,7 +616,7 @@
             width: 100%;
         }
 
-        /* Contact */
+        /* CONTACT */
 
         .contact-band {
             margin-top: 80px;
@@ -670,7 +673,7 @@
             color: var(--gold);
         }
 
-        /* Footer */
+        /* FOOTER */
 
         .footer {
             padding: 30px 0;
@@ -692,7 +695,7 @@
             font-size: 18px;
         }
 
-        /* Floating WhatsApp */
+        /* FLOATING WHATSAPP */
 
         .whatsapp-float {
             position: fixed;
@@ -710,7 +713,7 @@
             font-size: 25px;
         }
 
-        /* Lightbox */
+        /* LIGHTBOX */
 
         .lightbox {
             position: fixed;
@@ -748,9 +751,11 @@
             cursor: pointer;
         }
 
+        /* RESPONSIVE */
+
         @media (max-width: 900px) {
             .projects-grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
 
             .card-grid,
@@ -825,6 +830,7 @@
 <div class="page">
 
     <!-- NAVIGATION -->
+
     <header class="topbar">
         <div class="container topbar-inner">
 
@@ -843,7 +849,8 @@
         </div>
     </header>
 
-    <!-- PROJECT LISTING -->
+    <!-- PROJECT LISTING: ONLY SPICE GARDEN -->
+
     <main id="landingView" class="view">
 
         <section class="landing">
@@ -852,8 +859,6 @@
                 <h1 class="page-title">Our Projects</h1>
 
                 <div class="projects-grid">
-
-                    <!-- PROJECT 01: SPICE GARDEN -->
 
                     <article class="project-card">
 
@@ -905,64 +910,6 @@
 
                     </article>
 
-                    <!-- PROJECT 02: BREW & BLISS -->
-
-                    <article class="project-card">
-
-                        <div class="project-cover">
-
-                            <!-- Replace cafe-hero.jpg with your actual hero image filename -->
-                            <img
-                                src="brew-bliss/Images/hero/cafe-hero.jpg"
-                                alt="Brew and Bliss premium cafe website"
-                                loading="lazy"
-                            >
-
-                            <a class="wa-badge"
-                               href="https://wa.me/919361483073?text=Hello%2C%20I%20am%20interested%20in%20a%20cafe%20website%20like%20Brew%20and%20Bliss."
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               title="Enquire on WhatsApp">
-                                ☎
-                            </a>
-
-                        </div>
-
-                        <div class="project-body">
-
-                            <span class="project-category">
-                                Project 02 · Cafe Website
-                            </span>
-
-                            <h2>Brew &amp; Bliss Café</h2>
-
-                            <p>
-                                A premium café website concept designed around
-                                the tagline "A Little Sip of Happiness".
-                                Featuring elegant coffee-inspired branding,
-                                delicious menu collections, a visual gallery
-                                and an engaging customer experience.
-                            </p>
-
-                            <div class="project-tags">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>3D Visuals</span>
-                                <span>Responsive Design</span>
-                            </div>
-
-                            <a class="open-link"
-                               href="brew-bliss/index.html"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                View Project →
-                            </a>
-
-                        </div>
-
-                    </article>
-
                 </div>
 
             </div>
@@ -1003,6 +950,7 @@
         </div>
 
         <!-- ABOUT -->
+
         <section class="detail-section">
 
             <div class="container intro-text">
@@ -1051,6 +999,7 @@
         </section>
 
         <!-- WHY IT HELPS -->
+
         <section class="detail-section">
 
             <div class="container">
@@ -1106,6 +1055,7 @@
         </section>
 
         <!-- INTERIOR GALLERY -->
+
         <section class="detail-section">
 
             <div class="container">
@@ -1219,6 +1169,7 @@
         </section>
 
         <!-- CHEF PREPARATION -->
+
         <section class="detail-section">
 
             <div class="container">
@@ -1250,6 +1201,7 @@
         </section>
 
         <!-- RECIPES -->
+
         <section class="detail-section">
 
             <div class="container">
@@ -1267,6 +1219,7 @@
         </section>
 
         <!-- HOW IT WORKS -->
+
         <section class="detail-section">
 
             <div class="container">
@@ -1304,6 +1257,7 @@
         </section>
 
         <!-- CONTACT -->
+
         <section class="contact-band" id="contact">
 
             <div class="container contact-grid">
@@ -1363,6 +1317,7 @@
     </main>
 
     <!-- FOOTER -->
+
     <footer class="footer">
 
         <div class="container footer-inner">
@@ -1384,6 +1339,7 @@
 </div>
 
 <!-- FLOATING WHATSAPP -->
+
 <a class="whatsapp-float"
    href="https://wa.me/919361483073?text=Hello%2C%20I%20would%20like%20to%20book%20a%20website%20project."
    target="_blank"
@@ -1393,6 +1349,7 @@
 </a>
 
 <!-- LIGHTBOX -->
+
 <div class="lightbox" id="lightbox" hidden>
 
     <button class="lightbox-close" id="lightboxClose"
@@ -1556,7 +1513,7 @@
 
     }).join("");
 
-    /* IMAGE FALLBACK */
+    /* IMAGE ERROR HANDLING */
 
     document.addEventListener("error", function(event) {
 
