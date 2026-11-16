@@ -129,7 +129,7 @@
             border-color: #d9b77c;
         }
 
-        .project-card > img {
+        .project-card img {
             height: 350px;
         }
 
@@ -252,8 +252,6 @@
             margin-bottom: 15px;
         }
 
-        /* FEATURES */
-
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -298,8 +296,6 @@
             transform: scale(1.03);
         }
 
-        /* CHEF SECTION */
-
         .chef-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -330,22 +326,20 @@
         }
 
         .recipe-card:hover {
-            transform: translateY(-5px);
             border-color: #d9b77c;
+            transform: translateY(-4px);
         }
 
         .recipe-card img {
-            height: 180px;
-            width: 100%;
-            object-fit: cover;
+            height: 170px;
         }
 
         .recipe-info {
-            padding: 16px;
+            padding: 15px;
         }
 
         .recipe-info h3 {
-            font-size: 18px;
+            font-size: 17px;
             color: #e5c58f;
             margin-bottom: 8px;
         }
@@ -360,19 +354,17 @@
         .book-btn {
             display: block;
             text-align: center;
-            width: 100%;
-            padding: 10px 12px;
             background: #d9b77c;
             color: #101619;
+            padding: 10px;
             border-radius: 5px;
-            font-size: 14px;
             font-weight: bold;
+            font-size: 14px;
             transition: 0.3s;
         }
 
         .book-btn:hover {
             background: #f0d6a5;
-            transform: translateY(-2px);
         }
 
         /* CONTACT BAND */
@@ -441,8 +433,6 @@
             color: #d9b77c;
         }
 
-        /* WHATSAPP BUTTON */
-
         .whatsapp {
             position: fixed;
             right: 25px;
@@ -460,10 +450,7 @@
             box-shadow: 0 4px 15px rgba(0,0,0,.4);
         }
 
-        /* RESPONSIVE DESIGN */
-
         @media (max-width: 768px) {
-
             header {
                 flex-direction: column;
                 gap: 15px;
@@ -482,7 +469,7 @@
                 font-size: 29px;
             }
 
-            .project-card > img {
+            .project-card img {
                 height: 240px;
             }
 
@@ -513,7 +500,6 @@
         }
 
         @media (max-width: 480px) {
-
             .gallery {
                 grid-template-columns: 1fr;
             }
@@ -525,21 +511,15 @@
             .project-content {
                 padding: 22px;
             }
-
         }
-
     </style>
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
-
     <header>
-
-        <a href="index.html" class="logo">
-            SK Smart AI Technologies
-        </a>
+        <a href="index.html" class="logo">SK Smart AI Technologies</a>
 
         <nav>
             <a href="index.html">Home</a>
@@ -548,38 +528,24 @@
             <a href="projects.html" class="active">Projects</a>
             <a href="contact-page.html">Contact Us</a>
         </nav>
-
     </header>
 
-
-    <!-- PROJECT LIST -->
-
+    <!-- PROJECT LIST: SPICE GARDEN ONLY -->
     <section class="projects-section" id="projectsList">
-
         <div class="container">
 
             <div class="section-title">
-
                 <span>Our Portfolio</span>
-
                 <h2>Our Projects</h2>
-
-                <p>
-                    Explore our website design and development work.
-                </p>
-
+                <p>Explore our website design and development work.</p>
             </div>
 
             <div class="projects-grid">
 
-                <!-- ONLY PROJECT: SPICE GARDEN -->
-
                 <div class="project-card">
 
-                    <img
-                        src="images/restaurant-interior.jpg"
-                        alt="Spice Garden Restaurant Website"
-                    >
+                    <img src="images/restaurant-interior.jpg"
+                         alt="Spice Garden Restaurant Website">
 
                     <div class="project-content">
 
@@ -609,33 +575,23 @@
                         </button>
 
                     </div>
-
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
-
     <!-- SPICE GARDEN PROJECT DETAILS -->
-
     <section id="projectDetails">
-
         <div class="container">
 
             <button class="back-btn" onclick="closeProject()">
                 ← Back to Projects
             </button>
 
-
             <!-- HERO -->
-
             <div class="project-hero">
-
                 <div class="hero-content">
-
                     <span>RESTAURANT WEBSITE PROJECT</span>
 
                     <h1>Spice Garden</h1>
@@ -646,16 +602,11 @@
                         signature recipes and essential restaurant information
                         through a clean and responsive layout.
                     </p>
-
                 </div>
-
             </div>
 
-
             <!-- ABOUT -->
-
             <div class="detail-section">
-
                 <h2>About the Project</h2>
 
                 <p>
@@ -670,14 +621,10 @@
                     food photography, readable content and a responsive
                     layout that works across desktop and mobile devices.
                 </p>
-
             </div>
 
-
             <!-- WEBSITE FEATURES -->
-
             <div class="detail-section">
-
                 <h2>What This Website Offers</h2>
 
                 <div class="feature-grid">
@@ -707,22 +654,18 @@
                     </div>
 
                     <div class="feature-card">
-                        <h3>Online Booking</h3>
+                        <h3>Contact Information</h3>
                         <p>
-                            Allows visitors to select a dish and send
-                            a booking enquiry through WhatsApp.
+                            Helps visitors connect with the restaurant
+                            for enquiries and reservations.
                         </p>
                     </div>
 
                 </div>
-
             </div>
 
-
             <!-- RESTAURANT GALLERY -->
-
             <div class="detail-section">
-
                 <h2>Restaurant Gallery</h2>
 
                 <p>
@@ -732,47 +675,31 @@
 
                 <div class="gallery">
 
-                    <img
-                        src="images/restaurant-interior.jpg"
-                        alt="Restaurant interior"
-                    >
+                    <img src="images/restaurant-interior.jpg"
+                         alt="Restaurant interior">
 
-                    <img
-                        src="images/restaurant-food.jpg"
-                        alt="Restaurant food"
-                    >
+                    <img src="images/restaurant-food.jpg"
+                         alt="Restaurant food">
 
-                    <img
-                        src="images/cafe-coffee.jpg"
-                        alt="Coffee presentation"
-                    >
+                    <img src="images/cafe-coffee.jpg"
+                         alt="Coffee presentation">
 
-                    <img
-                        src="images/bakery-display.jpg"
-                        alt="Food display"
-                    >
+                    <img src="images/bakery-display.jpg"
+                         alt="Food display">
 
-                    <img
-                        src="images/chef-preparation.jpg"
-                        alt="Chef preparation"
-                    >
+                    <img src="images/restaurant-chef.jpg"
+                         alt="Restaurant chef">
 
-                    <img
-                        src="images/cakes.jpg"
-                        alt="Cake collection"
-                    >
+                    <img src="images/cakes.jpg"
+                         alt="Cake collection">
 
                 </div>
-
             </div>
 
-
             <!-- CHEF PREPARATION -->
-
             <div class="detail-section chef-section">
 
                 <div>
-
                     <h2>Freshly Prepared with Care</h2>
 
                     <p>
@@ -785,47 +712,56 @@
                         content, visitors can explore the restaurant's
                         culinary experience.
                     </p>
-
                 </div>
 
-                <img
-                    src="images/chef-preparation.jpg"
-                    alt="Chef preparing food"
-                >
+                <img src="images/chef-preparation.jpg"
+                     alt="Chef preparing food">
 
             </div>
 
-
-            <!-- RECIPE COLLECTION -->
-
+            <!-- RECIPES -->
             <div class="detail-section">
 
                 <h2>Popular Food Collection</h2>
 
                 <p>
-                    Explore our delicious food collection, check the prices
-                    and click Book Now to send your dish selection.
+                    Explore our delicious food collection. Check the price
+                    of each dish and click Book Now to send your selection
+                    directly through WhatsApp.
                 </p>
 
                 <div class="recipe-grid">
 
-
                     <!-- CHICKEN CURRY -->
-
                     <div class="recipe-card">
-
-                        <img
-                            src="images/chicken-curry.jpg"
-                            alt="Chicken Curry"
-                        >
+                        <img src="images/chicken-curry.jpg"
+                             alt="Chicken curry">
 
                         <div class="recipe-info">
-
                             <h3>Chicken Curry</h3>
+                            <div class="recipe-price">₹220</div>
 
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Chicken Curry', 220)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CHICKEN BIRYANI -->
+                    <div class="recipe-card">
+                        <img src="images/biriyani-main.jpg"
+                             alt="Chicken biryani">
+
+                        <div class="recipe-info">
+                            <h3>Chicken Biryani</h3>
                             <div class="recipe-price">₹180</div>
 
-                            <a
-                                href="#"
-                                class="book-btn"
-                                onclick="bookDish(event, 'Chicken Curry', 180)"
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Chicken Biryani', 180)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CHICKEN 65 -->
