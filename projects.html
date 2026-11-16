@@ -765,3 +765,271 @@
                     </div>
 
                     <!-- CHICKEN 65 -->
+                    <div class="recipe-card">
+                        <img src="images/chicke-65.jpg.jpg"
+                             alt="Chicken 65">
+
+                        <div class="recipe-info">
+                            <h3>Chicken 65</h3>
+                            <div class="recipe-price">₹200</div>
+
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Chicken 65', 200)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FRIED RICE -->
+                    <div class="recipe-card">
+                        <img src="images/fried-rice-recipe.jpg.jpg"
+                             alt="Fried rice">
+
+                        <div class="recipe-info">
+                            <h3>Fried Rice</h3>
+                            <div class="recipe-price">₹150</div>
+
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Fried Rice', 150)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- MUTTON SPECIAL -->
+                    <div class="recipe-card">
+                        <img src="images/mutton-recipe.jpg"
+                             alt="Mutton special">
+
+                        <div class="recipe-info">
+                            <h3>Mutton Special</h3>
+                            <div class="recipe-price">₹280</div>
+
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Mutton Special', 280)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- IDLI -->
+                    <div class="recipe-card">
+                        <img src="images/idli-recipe.jpg"
+                             alt="Idli">
+
+                        <div class="recipe-info">
+                            <h3>Idli</h3>
+                            <div class="recipe-price">₹60</div>
+
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Idli', 60)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- DOSA -->
+                    <div class="recipe-card">
+                        <img src="images/recipe-dosa.jpg"
+                             alt="Dosa">
+
+                        <div class="recipe-info">
+                            <h3>Dosa</h3>
+                            <div class="recipe-price">₹80</div>
+
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Dosa', 80)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- BURGER -->
+                    <div class="recipe-card">
+                        <img src="images/recipe-burger.webp"
+                             alt="Burger">
+
+                        <div class="recipe-info">
+                            <h3>Burger</h3>
+                            <div class="recipe-price">₹160</div>
+
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Burger', 160)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PIZZA -->
+                    <div class="recipe-card">
+                        <img src="images/pizza-fastfood.jpg"
+                             alt="Pizza">
+
+                        <div class="recipe-info">
+                            <h3>Pizza</h3>
+                            <div class="recipe-price">₹250</div>
+
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Pizza', 250)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- VEG MEALS -->
+                    <div class="recipe-card">
+                        <img src="images/veg-meals.jpg"
+                             alt="Vegetarian meals">
+
+                        <div class="recipe-info">
+                            <h3>Veg Meals</h3>
+                            <div class="recipe-price">₹140</div>
+
+                            <a href="#" class="book-btn"
+                               onclick="bookDish(event, 'Veg Meals', 140)">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CONTACT BAND -->
+            <div class="detail-section">
+                <div class="contact-band">
+
+                    <h2>Interested in Our Website Design?</h2>
+
+                    <p>
+                        Looking for a professional website for your business?
+                        Get in touch with SK Smart AI Technologies.
+                    </p>
+
+                    <a href="contact-page.html" class="primary-btn">
+                        Contact Us →
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+
+        <span class="lightbox-close"
+              onclick="closeLightbox()">&times;</span>
+
+        <img id="lightboxImage" src="" alt="Gallery preview">
+
+    </div>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/919361483073"
+       class="whatsapp"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contact us on WhatsApp">
+        ☎
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © <span id="year"></span>
+            <span>SK Smart AI Technologies</span>.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // OPEN PROJECT DETAILS
+
+        function openProject() {
+            document.getElementById("projectsList").style.display = "none";
+            document.getElementById("projectDetails").style.display = "block";
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // BACK TO PROJECT LIST
+
+        function closeProject() {
+            document.getElementById("projectDetails").style.display = "none";
+            document.getElementById("projectsList").style.display = "block";
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        // WHATSAPP BOOKING
+
+        function bookDish(event, dishName, price) {
+
+            event.preventDefault();
+
+            const phoneNumber = "919361483073";
+
+            const message =
+                "Hello! I would like to book the following dish:\n\n" +
+                "Dish: " + dishName + "\n" +
+                "Price: ₹" + price + "\n\n" +
+                "Please provide booking details.";
+
+            const whatsappURL =
+                "https://wa.me/" + phoneNumber +
+                "?text=" + encodeURIComponent(message);
+
+            window.open(whatsappURL, "_blank");
+
+        }
+
+        // IMAGE LIGHTBOX
+
+        function openLightbox(imageSource) {
+            document.getElementById("lightboxImage").src = imageSource;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+
+        // ENABLE GALLERY IMAGE PREVIEW
+
+        document.querySelectorAll(".gallery img").forEach(function(image) {
+
+            image.addEventListener("click", function() {
+                openLightbox(this.src);
+            });
+
+        });
+
+        // CLOSE LIGHTBOX WITH ESCAPE KEY
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+                closeLightbox();
+            }
+
+        });
+
+        // FOOTER YEAR
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>
